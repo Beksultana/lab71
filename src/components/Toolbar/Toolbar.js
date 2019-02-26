@@ -1,10 +1,13 @@
 import React from 'react';
+import NavigationItems from "../NavigationItem/NavigationItems/NavigationItems";
 
 const Toolbar = () => {
     return (
-        <div>
-            
-        </div>
+        <header className="Toolbar">
+            <nav>
+                <NavigationItems/>
+            </nav>
+        </header>
     );
 };
 
