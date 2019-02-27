@@ -1,0 +1,20 @@
+.DishesItem {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #ccc;
+    margin: 10px;
+}
+.DishesItem img {
+    width: 100%;
+    box-shadow: 2px 2px 8px #ccc;
+}
+.DishesItem h1 , p {
+    margin: 0;
+}
+.ShowDishes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

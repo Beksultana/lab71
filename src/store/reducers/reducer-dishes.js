@@ -1,14 +1,33 @@
+import {DISH_FAILUER, DISH_REQUEST, DISH_SUCCESS} from "../actions/actionTypes";
+
 const initialState = {
-    dishes: {
-        dishesTitle: '',
-        dishesPrice: '',
-        dishesImage: '',
-    }
+    dishes: {},
+    loading: false
 };
 
 const reducer = (state = initialState, action) => {
 
-    return state;
+    switch (action.type) {
+        case DISH_REQUEST:
+            console.log('DISH_REQUEST');
+            return {
+                ...state,
+                loading: true
+            };
+        case DISH_SUCCESS:
+            console.log('DISH_SUCCESS', action.data);
+            return {
+                ...state,
+                loading: false,
+                dishes: action.data
+            };
+        case DISH_FAILUER:
+            return (
+                console.log('Error')
+            );
+        default:
+            return state;
+    }
 };
 
 export default reducer;
