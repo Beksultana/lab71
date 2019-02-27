@@ -1,9 +1,9 @@
 .DishesItem {
-    width: 200px;
+    width: 230px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 2px 2px 7px #ccc;
+    box-shadow: 2px 2px 10px #ccc;
     margin: 10px;
 }
 .DishesItem img {
@@ -17,4 +17,13 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.Buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.Dishes{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 0;
 }

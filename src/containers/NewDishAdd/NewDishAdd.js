@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from '../../axios-dishes.js';
+import './NewDishAdd.css';
 
 class NewDishAdd extends Component {
 
@@ -31,13 +32,19 @@ class NewDishAdd extends Component {
     render() {
         return (
             <div className="NewDishAdd">
-                <input value={this.state.dishesTitle} onChange={this.OnChangeDishHandler}
-                       type="text" placeholder="Enter a name dishes..." name="dishesTitle"/>
-                <input value={this.state.dishesPrice} onChange={this.OnChangeDishHandler}
-                       type="text" placeholder="Enter a price..." name="dishesPrice"/>
-                <input value={this.state.dishesImage} onChange={this.OnChangeDishHandler}
-                       type="text" placeholder="Enter a link image..." name="dishesImage"/>
-                <button onClick={this.dishesAdded}>Added</button>
+                <h3>Added new dishes</h3>
+                <div className="NewDishFormBlock">
+                    <label>Enter a name dishes...</label>
+                    <input className="form-control input" value={this.state.dishesTitle} onChange={this.OnChangeDishHandler}
+                           type="text"  name="dishesTitle"/>
+                    <label>Enter a price dishes...</label>
+                    <input className="form-control input" value={this.state.dishesPrice} onChange={this.OnChangeDishHandler}
+                           type="text"  name="dishesPrice"/>
+                    <label>Enter a image dishes...</label>
+                    <input className="form-control input" value={this.state.dishesImage} onChange={this.OnChangeDishHandler}
+                           type="text"  name="dishesImage"/>
+                    <button className="btn btn-primary" onClick={this.dishesAdded}>Added</button>
+                </div>
             </div>
         );
     }

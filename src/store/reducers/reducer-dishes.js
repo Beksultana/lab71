@@ -1,4 +1,4 @@
-import {DISH_FAILUER, DISH_REQUEST, DISH_SUCCESS} from "../actions/actionTypes";
+import { DISH_FAILUER, DISH_REQUEST, DISH_SUCCESS} from "../actions/actionTypes";
 
 const initialState = {
     dishes: {},
