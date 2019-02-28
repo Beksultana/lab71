@@ -1,4 +1,4 @@
-import { DISH_FAILUER, DISH_REQUEST, DISH_SUCCESS} from "../actions/actionTypes";
+import {DISH_FAILUER, DISH_REQUEST, DISH_SUCCESS} from "../actions/actionTypes";
 
 const initialState = {
     dishes: {},
@@ -22,9 +22,11 @@ const reducer = (state = initialState, action) => {
                 dishes: action.data
             };
         case DISH_FAILUER:
-            return (
-                console.log('Error')
-            );
+            return {
+                ...state,
+                loading: true
+            };
+
         default:
             return state;
     }
