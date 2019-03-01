@@ -1,25 +1,10 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './Spinner.css';
 
-const Spinner = () => {
-    return (
-        <Fragment>
-            <div className="lds-spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </Fragment>
-    );
+const Spinner = props => {
+  return (
+    <div className="Spinner">Loading...</div>
+  );
 };
 
 export default Spinner;

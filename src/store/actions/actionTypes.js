@@ -2,4 +2,8 @@
 export const DISH_REQUEST = 'DISH_REQUEST';
 export const DISH_SUCCESS = 'DISH_SUCCESS';
 export const DISH_FAILUER = 'DISH_FAILUER';
-export const DISH_DELETE = 'DISH_DELETE';
+
+export const ORDER_REQUEST = 'ORDER_REQUEST';
+export const ORDER_SUCCESS = 'ORDER_SUCCESS';
+export const ORDER_FAILUER = 'ORDER_FAILUER ';
+
